@@ -13,7 +13,7 @@ export function calcularMedia(nota1: number, nota2: number): number {
 }
 
 export function situacao(media: number): Situacao {
-    if (media >= MEDIA_APROVACAO) {
+    if (media > MEDIA_APROVACAO) {
         return 'aprovado';
     }
     if (media >= MEDIA_RECUPERACAO) {
