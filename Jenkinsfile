@@ -28,5 +28,16 @@ pipeline {
                 }
             }
         }
+
+        stage('Cobertura') {
+            steps {
+                sh 'npm run coverage'
+            }
+            post {
+                always {
+                    recordCoverage(tools: [[parser: 'COBERTURA', pattern: 'coverage/cobertura-coverage.xml']])
+                }
+            }
+        }
     }
 }
