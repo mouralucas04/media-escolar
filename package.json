@@ -1,0 +1,19 @@
+{
+  "name": "media-escolar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^5.1.0",
+    "code": "^5.2.4",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
