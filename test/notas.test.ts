@@ -27,4 +27,8 @@ describe('situacao', () => {
     it('média 4,9 reprova', () => {
         expect(situacao(4.9)).toBe('reprovado');
     });
+
+    it('rejeita nota fora do intervalo', () => {
+        expect(() => calcularMedia(11, 5)).toThrow(RangeError)
+    })
 });
