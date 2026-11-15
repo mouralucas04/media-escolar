@@ -9,7 +9,7 @@ export function calcularMedia(nota1: number, nota2: number): number {
             throw new RangeError(`Nota fora do intervalo de 0 a 10: ${nota}`)
         }
     }
-    return (nota1 + nota2) / 2;
+    return ((nota1 + nota2) / 2).toFixed(1);
 }
 
 export function situacao(media: number): Situacao {
